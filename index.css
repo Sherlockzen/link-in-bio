@@ -4,8 +4,8 @@ html {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     align-items: center;
     box-sizing: border-box;
     margin: 0;
@@ -15,9 +15,13 @@ body {
     color: white;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
+#vanta {
+    z-index: -2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100svw;
+    height: 100svh;
 }
 
 header {
@@ -25,6 +29,16 @@ header {
     flex-direction: column;
     align-items: center;
     margin-top: 3rem;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.6rem;
+}
+
+header > h1 {
+    background-color: rgba(0, 0, 0, 0.667);
+    backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+    border-radius: 10em;
+    padding: 0.5em;
 }
 
 .img-icons img  {
@@ -37,14 +51,38 @@ img {
 }
 
 ul {
-    width: 10rem;
+    /* width: 80%; */
+    margin: 0 auto;
+    padding: 2em;
+    list-style-type: none;
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
+    max-width: 480px;
 }
 
 li {
-    display: flex;
-    align-items: center;
     justify-content: space-around;
-    /* max-width: 15rem; */
+    background-color: #fffa;
+    backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+    border-radius: 10em;
+    padding: 1em;
+    margin: 1.4em 0;
+    letter-spacing: 0.2em;
+}
+
+li > a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
 
 .profile-photo {
@@ -57,3 +95,12 @@ li {
     border: 2px solid rgb(255, 255, 255, 0.5);
     box-shadow: 0px 0px 61px 47px rgba(157, 250, 81, 0.2);
 }
+
+/* .bg-filter {
+    width: 100svw;
+    height: 100svh;
+    background-color: white;
+    opacity: 0.15;
+    position: absolute;
+    z-index: -1;
+} */

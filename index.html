@@ -5,6 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            VANTA.BIRDS({
+            el: "#vanta",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color1: 0xff75,
+            color2: 0xe5ff00,
+            wingSpan: 40.00,
+            separation: 80.00,
+            alignment: 50.00,
+            cohesion: 16.00,
+            quantity: 3.00,
+            backgroundAlpha: 0.0
+        })
+        })
+    </script>
     <title>Hewerton Soares</title>
 </head>
 <body>
@@ -16,23 +43,31 @@
     </header>
     <ul>
         <li>
-            <div class="img-icons">
-                <img src="./images/github.png" alt="github icon">
-            </div>
-            <a target="_blank" href="https://github.com/sherlockzen">Github</a>
+            <a target="_blank" href="https://github.com/sherlockzen">
+                <div class="img-icons">
+                    <img src="./images/github.png" alt="github icon">
+                </div>
+                Github
+            </a>
         </li>
         <li>
-            <div class="img-icons">
-                <img src="./images/twitter.svg" alt="twitter icon">
-            </div>
-            <a target="_blank" href="https://twitter.com/hewertonsoares">Twitter</a>
+            <a target="_blank" href="https://twitter.com/hewertonsoares">
+                <div class="img-icons">
+                    <img src="./images/twitter.svg" alt="twitter icon">
+                </div>
+                Twitter
+            </a>
         </li>
         <li>
-            <div class="img-icons">
-                <img src="./images/linkedin-in.svg" alt="linkedin icon">
-            </div>
-            <a target="_blank" href="https://linkedin.com/in/hewertonsoares">Linkedin</a>
+            <a target="_blank" href="https://linkedin.com/in/hewertonsoares">
+                <div class="img-icons">
+                    <img src="./images/linkedin-in.svg" alt="linkedin icon">
+                </div>
+                Linkedin
+            </a>
         </li>
     </ul>
+    <div id="vanta"></div>
+    <div class="bg-filter"></div>
 </body>
 </html>
