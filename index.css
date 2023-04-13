@@ -13,6 +13,8 @@ body {
     background: url(./images/photo-1621872315260-d29289474c0a.avif) repeat center center fixed;
     background-size: cover;
     color: white;
+    opacity: 0;
+    transition: opacity 3s ease-in-out, filter 2s ease-in-out;
 }
 
 #vanta {
@@ -22,6 +24,11 @@ body {
     top: 0;
     width: 100svw;
     height: 100svh;
+}
+
+main {
+    position: relative;
+    /* opacity: 0; */
 }
 
 header {
